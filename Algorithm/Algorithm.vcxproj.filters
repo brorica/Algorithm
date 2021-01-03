@@ -15,28 +15,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2580.cpp">
+    <ClCompile Include="string\1786.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="15649.cpp">
+    <ClCompile Include="backTracking\2580.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="15650.cpp">
+    <ClCompile Include="backTracking\9663.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="15651.cpp">
+    <ClCompile Include="backTracking\14888.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="15652.cpp">
+    <ClCompile Include="backTracking\14889.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="9663.cpp">
+    <ClCompile Include="backTracking\15649.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14888.cpp">
+    <ClCompile Include="backTracking\15650.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14889.cpp">
+    <ClCompile Include="backTracking\15651.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15652.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\1182.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15655.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15654.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15657.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15656.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15663.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15664.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15666.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="backTracking\15665.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
