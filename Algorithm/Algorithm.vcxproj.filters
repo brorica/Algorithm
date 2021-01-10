@@ -102,9 +102,6 @@
     <ClCompile Include="DP\11053.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DP\1912.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="backTracking\1182.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -112,6 +109,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="backTracking\10971.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\1149.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\1912.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\2565.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
