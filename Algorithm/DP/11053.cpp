@@ -18,8 +18,8 @@ int main()
 		cache[i] = 1;
 		for (j = 0; j < i; j++)
 		{
-			if (list[i] > list[j] && cache[i] < cache[j] + 1)
-				cache[i] = cache[j] + 1;
+			if (list[i] > list[j])
+				cache[i] = max(cache[i], cache[j] + 1);
 		}
 		ans = max(cache[i], ans);
 	}
