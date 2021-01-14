@@ -141,5 +141,17 @@
     <ClCompile Include="DP\1535.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bruteForce\11047.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bruteForce\1931.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bruteForce\13305.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bruteForce\1541.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
