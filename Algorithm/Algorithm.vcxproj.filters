@@ -141,16 +141,28 @@
     <ClCompile Include="DP\1535.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bruteForce\11047.cpp">
+    <ClCompile Include="DP\14501.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bruteForce\1931.cpp">
+    <ClCompile Include="greedy\1541.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bruteForce\13305.cpp">
+    <ClCompile Include="greedy\1931.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bruteForce\1541.cpp">
+    <ClCompile Include="greedy\11047.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\11399.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\13305.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\1946.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\2217.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
