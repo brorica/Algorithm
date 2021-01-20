@@ -210,9 +210,6 @@
     <ClCompile Include="stack\9012.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="stack\16120.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="DP\15624.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -229,6 +226,27 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="stack\17298.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\18258.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\2164.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\1966.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\11866.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\10866.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\1021.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\5430.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
