@@ -23,6 +23,8 @@ int main()
 		swap(A, B);
 		swap(Alen, Blen);
 	}
+
+	// 마지막 원소들이 같은지 비교
 	i = Alen - 1;
 	j = Blen - 1;
 	while (i & j)

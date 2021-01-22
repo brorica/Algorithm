@@ -258,5 +258,14 @@
     <ClCompile Include="DC\1780.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DC\1629.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DC\2740.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DC\10830.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
