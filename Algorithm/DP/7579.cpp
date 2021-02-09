@@ -11,7 +11,7 @@ int dp()
 	int i, j;
 	for (i = 1; i <= N; i++)
 	{
-		for (j = 1; j <= 20; j++)
+		for (j = 1; j <= 10000; j++)
 		{
 			if (cost[i - 1] > j)
 				cache[i][j] = cache[i - 1][j];
