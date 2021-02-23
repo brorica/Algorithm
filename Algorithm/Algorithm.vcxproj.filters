@@ -396,5 +396,14 @@
     <ClCompile Include="graph\11404.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="graph\10217.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\1916.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\1956_Dijkstra.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
