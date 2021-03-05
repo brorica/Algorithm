@@ -474,9 +474,6 @@
     <ClCompile Include="twoPointer\2467.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="twoPointer\2531.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="twoPointer\2473.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -499,6 +496,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="twoPointer\1484.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="twoPointer\15961.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="twoPointer\14921.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="twoPointer\15565.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="twoPointer\10025.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch\1764.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch\2512.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
