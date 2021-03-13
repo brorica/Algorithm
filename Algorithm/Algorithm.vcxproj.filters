@@ -519,5 +519,20 @@
     <ClCompile Include="graph\1261.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="graph\4485.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\2665.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\1238_Floyd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\1238_dijkstra.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\17806.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
