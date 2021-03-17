@@ -11,13 +11,13 @@ int visit[20001];
 
 int dfs(int start)
 {
-	priority_queue< pair<int, int> > q;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
 	int size, here, hereCost, there, thereCost;
 	q.push({ 0, start });
 	while (!q.empty())
 	{
 		here = q.top().second;
-		hereCost = q.top().first * -1;
+		hereCost = q.top().first;
 		size = graph[here].size();
 		q.pop();
 		if (visit[here] < hereCost) 
@@ -29,7 +29,7 @@ int dfs(int start)
 			if (thereCost < visit[there])
 			{
 				visit[there] = thereCost;
-				q.push({ visit[there] * -1, there });
+				q.push({ visit[there], there });
 			}
 		}
 	}

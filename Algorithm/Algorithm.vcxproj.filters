@@ -534,5 +534,8 @@
     <ClCompile Include="graph\17806.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="simulation\20057.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
