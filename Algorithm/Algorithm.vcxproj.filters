@@ -582,5 +582,11 @@
     <ClCompile Include="simulation\8911.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="greedy\1461.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation\3048.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
