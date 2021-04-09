@@ -273,9 +273,6 @@
     <ClCompile Include="DP\11052.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="temp\c.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="temp\test.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -604,6 +601,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="backTracking\1759.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\codeJamB.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation\10974.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
