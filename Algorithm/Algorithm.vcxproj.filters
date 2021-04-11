@@ -606,7 +606,10 @@
     <ClCompile Include="temp\codeJamB.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="simulation\10974.cpp">
+    <ClCompile Include="backTracking\15684.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation\16234.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
