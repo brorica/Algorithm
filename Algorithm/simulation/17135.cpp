@@ -30,6 +30,7 @@ int main()
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
+
 	int ret;
 	cin >> N >> M >> D;
 	for (int i = 0; i < N; i++)
@@ -39,6 +40,7 @@ int main()
 			cin >> map[i][j];
 		}
 	}
+
 	for (int i = 0; i < M; i++)
 	{
 		archor.push_back(i);
@@ -47,15 +49,17 @@ int main()
 			archor.push_back(j);
 			for (int k = j + 1; k < M; k++)
 			{
-				memcpy(copyMap, map, sizeof(copyMap));
 				archor.push_back(k);
 				archorLine = N;
+
+				memcpy(copyMap, map, sizeof(copyMap));
 				ret = 0;
 				while (check())
 				{
 					ret += myTurn();
 					enemyTurn();
 				}
+
 				ans = max(ans, ret);
 				archor.pop_back();
 			}
@@ -72,17 +76,20 @@ int myTurn()
 	int enemyX, enemyY, enemyD, archorX, archorY;
 	int attackX = MAX, attackY = MAX, attackD;
 	int ret = 0;
+
 	for (int i = 0; i < archor.size(); i++)
 	{
 		archorY = archorLine;
 		archorX = archor[i];
 		attackX = MAX;
 		attackD = D;
+
 		for (int j = 0; j < enemy.size(); j++)
 		{
 			enemyX = enemy[j].x;
 			enemyY = enemy[j].y;
 			enemyD = abs(enemyX - archorX) + abs(enemyY - archorY);
+
 			if (enemyD <= D)
 			{
 				// 가까운 적
@@ -92,6 +99,7 @@ int myTurn()
 					attackY = enemyY;
 					attackD = enemyD;
 				}
+				// 같은 사거리 내 적이 여러명
 				else if (enemyD == attackD)
 				{
 					if (enemyX < attackX)
