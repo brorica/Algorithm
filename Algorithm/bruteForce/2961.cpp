@@ -1,58 +1,83 @@
 #include <iostream>
 #include <vector>
-#include <cmath>
+#include <string>
 #include <algorithm>
 using namespace std;
 
-int ans = 0x7FFFFFFF;
-bool check[16] = { 0, };
-typedef struct
-{
-    int s, b;
-}FLAVOR;
+int N, K, ans = 0;
+vector<int> bits;
 
-int N;
-vector<FLAVOR> v;
-
-int search(int count, int mul, int sum);
+int search(int index, int count, int learn);
+int calc(int learn);
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int S, B;
-    cin >> N;
+    string str;
+    int learn = 0;
+    cin >> N >> K;
+
+    if (K < 5)
+    {
+        cout << 0;
+        return 0;
+    }
+    K -= 5;
+
+    learn |= (1 << ('a' - 'a'));
+    learn |= (1 << ('n' - 'a'));
+    learn |= (1 << ('t' - 'a'));
+    learn |= (1 << ('i' - 'a'));
+    learn |= (1 << ('c' - 'a'));
+
     for (int i = 0; i < N; i++)
     {
-        cin >> S >> B;
-        v.push_back({ S,B });
+        cin >> str;
+        int bit = learn;
+        for (int j = 4; j < str.length() - 4; j++)
+        {
+            int temp = str[j] - 'a';
+            bit |= (1 << temp);
+        }
+        bits.push_back(bit);
     }
-    search(0, 1, 0);
+
+    search(0, 0, learn);
     cout << ans;
     return 0;
 }
 
-int search(int count, int mul, int sum)
+int search(int index, int count, int learn)
 {
-    if (count == N)
+    if (count >= K)
     {
-        bool flag = true;
-        for (int i = 0; i < N; i++)
-        {
-            if (check[i])
-            {
-                flag = false;
-                break;
-            }
-        }
-        if (flag)
-            return 0x7FFFFFFF;
-        ans = min(ans, abs(mul - sum));
+        calc(learn);
         return 0;
     }
-    check[count] = 1;
-    search(count + 1, mul * v[count].s, sum + v[count].b);
-    check[count] = 0;
-    search(count + 1, mul, sum);
+    for (int i = index; i < 26; i++)
+    {
+        // a, c, i, n, t °Ç³Ê¶Ü
+        if (i == 0 || i == 2 || i == 8 || i == 13 || i == 19)
+            continue;
+        if ((learn & (1 << i)) == 0)
+        {
+            learn |= (1 << i);
+            search(i + 1, count + 1, learn);
+            learn ^= (1 << i);
+        }
+    }
+    return 0;
+}
+
+int calc(int learn)
+{
+    int ret = 0;
+    for (int i = 0; i < N; i++)
+    {
+        if ((bits[i] & learn) == bits[i])
+            ret++;
+    }
+    ans = max(ans, ret);
     return 0;
 }
