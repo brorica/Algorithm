@@ -684,5 +684,11 @@
     <ClCompile Include="bruteForce\2961.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bruteForce\1038.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\9465.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
