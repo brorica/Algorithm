@@ -3,58 +3,28 @@
 #include <algorithm>
 using namespace std;
 
-
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	string A, B;
-	int LCS[1024][1024] = { 0, };
-	int i, j, temp = 0;
-	int Alen, Blen;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    string a, b;
+    int flag = 0;
+    int dp[2][1024] = { 0, };
+    cin >> a >> b;
+    a = '0' + a;
+    b = '0' + b;
 
-	cin >> A >> B;
-	A = '0' + A;
-	B = '0' + B;
-	Alen = A.length();
-	Blen = B.length();
-	if (Blen > Alen)
-	{
-		swap(A, B);
-		swap(Alen, Blen);
-	}
-
-	// 마지막 원소들이 같은지 비교
-	i = Alen - 1;
-	j = Blen - 1;
-	while (i & j)
-	{
-		if (A[i] != B[j])
-			break;
-		else
-		{
-			Alen--;
-			Blen--;
-			temp++;
-		}
-		i--;
-		j--;
-	}
-	if (Alen == 0 || Blen == 0)
-		cout << temp;
-	else
-	{
-		for (i = 1; i < Alen; i++)
-		{
-			for (j = 1; j < Blen; j++)
-			{
-				if (A[i] == B[j])
-					LCS[i][j] = LCS[i - 1][j - 1] + 1;
-				else
-					LCS[i][j] = max(LCS[i - 1][j], LCS[i][j - 1]);
-			}
-		}
-		cout << LCS[i - 1][j - 1] + temp;
-	}
-	return 0;
+    for (int i = 1; i < b.length(); i++)
+    {
+        for (int j = 1; j < a.length(); j++)
+        {
+            if (b[i] == a[j])
+                dp[flag][j] = dp[flag ^ 1][j - 1] + 1;
+            else
+                dp[flag][j] = max(dp[flag ^ 1][j], dp[flag][j - 1]);
+        }
+        flag ^= 1;
+    }
+    cout << dp[flag ^ 1][a.length() - 1];
+    return 0;
 }
