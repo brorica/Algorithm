@@ -1,0 +1,61 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+
+    static int bombLen;
+    static String text, bomb;
+    static Stack<Character> ans = new Stack<>();
+    static StringBuilder sb = new StringBuilder();
+
+    public static void main(String[] args) throws Exception {
+        input();
+        solve();
+        print();
+    }
+
+    private static void solve() {
+        for (int i = 0; i < text.length(); i++) {
+            char letter = text.charAt(i);
+            ans.push(letter);
+            if (letter == bomb.charAt(bombLen - 1)) {
+                check();
+            }
+        }
+    }
+
+    private static void check() {
+        Stack<Character> backup = new Stack<>();
+        for (int i = 1; i <= bombLen; i++) {
+            if(ans.isEmpty())
+                break;
+            if(ans.peek() == bomb.charAt(bombLen - i)) {
+                backup.add(ans.pop());
+            }
+        }
+        if(backup.size() != bombLen) {
+            while(!backup.isEmpty())
+                ans.push(backup.pop());
+        }
+    }
+
+    private static void input() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        text = br.readLine();
+        bomb = br.readLine();
+        bombLen = bomb.length();
+    }
+
+
+    private static void print() throws IOException {
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        if(ans.isEmpty())
+            bw.write("FRULA");
+        else {
+            while (!ans.isEmpty())
+                sb.append(ans.pop());
+        }
+        bw.write(sb.reverse().toString());
+        bw.flush();
+    }
+}
